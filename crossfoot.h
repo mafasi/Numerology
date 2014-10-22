@@ -16,15 +16,18 @@ signals:
     void result(QString sum);
     void addToList(QString lastValue);
     void updateStatus(QString);
+    void translated(QString out);
 
 public slots:
     void calculate(QString in);
     void setName(QString name) { _lastName = name; }
     void clearHistory(QString name) { _history = name + "-"; }
     void saveLastValue();
+    void translate(QString in);
 
 protected:
-    void initTable();
+    void _initTable();
+    QString _translate(QString in);
 
 private:
     std::map<QChar, unsigned> _table;

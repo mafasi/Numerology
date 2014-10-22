@@ -19,7 +19,7 @@ public:
 
 private:
     Ui::MainGui *_ui;
-    CrossFoot *_cf;
+    CrossFoot* _crossFootLeft, *_crossFootRight;
 };
 
 #endif // MAINGUI_H
