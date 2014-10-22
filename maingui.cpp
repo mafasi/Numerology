@@ -47,5 +47,6 @@ MainGui::~MainGui()
 {
     delete _ui;
     delete _crossFootLeft;
+    delete _crossFootRight;
 }
 
